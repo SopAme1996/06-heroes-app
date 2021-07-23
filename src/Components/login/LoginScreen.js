@@ -19,7 +19,7 @@ export const LoginScreen = () => {
   return (
     <>
       <div className="d-flex justify-content-center align-items-center vh-100 ">
-        <div className="card text-center container w-25">
+        <div className="card text-center container">
           <div className="card-header">
             <h1>Login</h1>
           </div>
