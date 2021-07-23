@@ -5,6 +5,8 @@ import { getHeroeById } from "../../selectors/getHeroeById";
 export const HeroesScreen = ({ history }) => {
   const { heroeId } = useParams();
   const hero = useMemo(() => getHeroeById(heroeId), [heroeId]);
+  const imgHeroes = require.context("../../assets/heroes", true);
+  
   if (!hero) {
     return <Redirect to="/" />;
   }
@@ -29,7 +31,7 @@ export const HeroesScreen = ({ history }) => {
       <div className="row mt-5">
         <div className="col-4">
           <img
-            src={`../assets/heroes/${heroeId}.jpg`}
+            src={imgHeroes(`./${heroeId}.jpg`).default}
             className="img-thumbnail"
             alt={superhero}
           />
