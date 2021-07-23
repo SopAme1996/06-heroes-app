@@ -14,8 +14,8 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <NavLink class="navbar-brand" to="/">HeroeApp</NavLink>
       <div className="container">
+        <NavLink class="navbar-brand" to="/">HeroeApp</NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
