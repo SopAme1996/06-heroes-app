@@ -15,16 +15,12 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <NavLink class="navbar-brand" to="/">HeroeApp</NavLink>
+        <NavLink className="navbar-brand" to="/">HeroeApp</NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100">
-
-            <li className="nav-item">
-              <span className="nav-item nav-link text-info">{name}</span>
-            </li>
             <li className="nav-item">
               <NavLink
                 activeClassName="active"
@@ -57,9 +53,10 @@ export const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-          <div className="w-100 d-flex justify-content-end align-items-center">
+          <div className="nameAndlogout d-flex justify-content-between align-items-center sm">
+            <span className="nav-item nav-link text-info p-0">{name}</span>
             <button className="nav-item nav-link btn d-flex justify-content-center align-items-center " onClick={handleLogout}>
-              <i className="fas fa-sign-out-alt fs-3"></i>Logout
+              <i className="fas fa-sign-out-alt fs-4"></i>Logout
             </button>
           </div>
         </div>

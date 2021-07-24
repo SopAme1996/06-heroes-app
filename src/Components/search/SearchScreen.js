@@ -16,7 +16,6 @@ export const SearchScreen = ({ history }) => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-
     history.push(`?q=${search}`);
   };
 
@@ -49,9 +48,11 @@ export const SearchScreen = ({ history }) => {
         <div className="col-7">
           <h4>Results</h4>
           <hr />
-          {hereoFilter.map((heroe) => {
-            return <HeroeCard key={heroe.id} {...heroe} />;
-          })}
+          {
+            hereoFilter.length > 0 ? hereoFilter.map((heroe) => {
+              return <HeroeCard key={heroe.id} {...heroe} />;
+            }) : <h3>El heroe no existe en nuestra base de datos</h3>
+          }
         </div>
       </div>
     </div>

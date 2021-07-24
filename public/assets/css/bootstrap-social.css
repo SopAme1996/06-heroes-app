@@ -7,6 +7,17 @@
  * https://github.com/lipis/bootstrap-social
  */
 
+.nameAndlogout{
+  width: 35%;
+}
+
+@media screen and (max-width: 1200px) {
+  
+.nameAndlogout{
+  width: 50%;
+}
+}
+
 .btn-social {
   position: relative;
   padding-left: 44px;
