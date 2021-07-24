@@ -18,6 +18,13 @@
 }
 }
 
+@media screen and (max-width: 980px) {
+  
+.nameAndlogout{
+  width: 100%;
+}
+}
+
 .btn-social {
   position: relative;
   padding-left: 44px;
